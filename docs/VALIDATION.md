@@ -1,6 +1,9 @@
 # Required validation before a playable release
 
-No compilation or gameplay run has been completed for 0.1.0-dev.
+0.1.0-preview compiled against the supplied installed game assemblies and
+RuinarchModLoader 0.5.0 with no warnings or errors. Metadata inspection confirms
+all six patched method names exist. This does not verify Harmony runtime patching.
+No gameplay run has been completed.
 Use a disposable world and copies of saves. Record game and loader versions,
 mod configuration, mods.log, and results. Test both with and without Ruinarch+.
 

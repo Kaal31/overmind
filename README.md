@@ -7,10 +7,16 @@ This repository is not a fork and contains no Ruinarch+ or game source.
 
 ## Status
 
-**0.1.0-dev: source preview.** Implementation is present, but compilation against
-the installed game and in-game testing have not been performed. No playable DLL
-or verified release is provided yet. Compatibility with Ruinarch+ is intended,
-not yet verified.
+**0.1.0-preview: compiled preview.** Compiled successfully against the supplied
+installed game assemblies and RuinarchModLoader 0.5.0, with no compiler warnings
+or errors. All six patched method names exist in those game assemblies (metadata
+check). Harmony runtime patching, gameplay, save compatibility and coexistence
+with Ruinarch+ still require in-game validation.
+
+To install the compiled preview, extract the ZIP into the game's `Mods` directory
+so that `Mods/Overmind/Overmind.dll` and `Mods/Overmind/mod.json` exist. Install
+RuinarchModLoader 0.5.0 separately. Start with a disposable world and copies of
+saves, following [the gameplay checks](docs/VALIDATION.md).
 
 ## First module: traits
 

@@ -22,6 +22,7 @@ def main():
     for path in (args.loader_dll, args.content_dll, args.harmony_dll):
         if not path.is_file():
             parser.error(f"Missing reference: {path}")
+        references = [reference for reference in references if reference.name.casefold() != path.name.casefold()]
         references.append(path)
     dotnet = shutil.which("dotnet")
     if not dotnet:
